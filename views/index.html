@@ -14,11 +14,14 @@
 
         <h3>Usage:</h3>
         <p>
-          Please Upload a File ...
+          Choose a file to upload:
         </p>
         <div class="view">
           <h4 id="output"></h4>
+          
+          <!-- User Story #1 - submit a form that includes a file upload -->
           <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+            <!-- User Story #2 - form file input field has the "name" attribute set to "upfile" -->
             <input id="inputfield" type="file" name="upfile">
             <input id="button" type="submit" value="Upload">
           </form>
@@ -26,8 +29,7 @@
       </div>
       <div class="footer">
         <p>
-          by 
-          <a href="http://www.freecodecamp.com">freeCodeCamp</a>
+          by James Ragain
         </p>
       </div>
    </body>

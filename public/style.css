@@ -3,8 +3,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #222;
-  background-color: #ECF0F1;
+  color: black;
+  background-color: lightblue;
   text-align: center;
 }
 
@@ -27,15 +27,17 @@ input {
   margin: 10px auto;
 }
 
+
 input#button {
   width: 230px;
+  background: gray;
 }
 
 .view {
   position:relative;
   margin: auto;
   margin-top: 40px;
-  border: 1px  solid  #aaa;
+  border: 2.5px  solid  #aaa;
   padding: 20px;
   width: 60%;
   min-width: 400px;

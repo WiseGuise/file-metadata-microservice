@@ -19,18 +19,15 @@ app.listen(port, function () {
 
 var multer = require("multer")
 
-app.post("/api/fileanalyse", multer().single("upfile"), (req, res) => {
+app.post("/api/fileanalyse", multer().single("upfile"), (req, res) => { 
   let resObject = {}
+  
+/* User Story #3 - When you submit a file, you receive the file name, 
+type, and size in bytes within the JSON response
   resObject['name'] = req.file.originalname
   resObject['type'] = req.file.mimetype
-  resObject['size'] = req.file.size
-  
-  
-  console.log(req.file)
-  res.json({
-    name: file.name,
-    type: file.type,
-    size: file.size
-  })
+  resObject['size'] = req.file.size + " bytes"
+  // console.log(req.file)
+  res.json(resObject)
 })
 
